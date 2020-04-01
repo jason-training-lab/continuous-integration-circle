@@ -8,8 +8,6 @@ jobs:
     executor: ci-executor
     steps:
       - checkout
-custom-build
-
       - run:
           name: build dependencies
           command: bundle install
@@ -21,4 +19,3 @@ custom-build
       - run:
           name: notify build is finished
           command: echo "The build is finished!"
-master
